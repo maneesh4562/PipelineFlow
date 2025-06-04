@@ -3,18 +3,17 @@ from fastapi.middleware.cors import CORSMiddleware
 from typing import List, Dict
 import json
 from collections import defaultdict
+import os
 
 app = FastAPI()
+
+# Get CORS origins from environment variable
+CORS_ORIGINS = os.getenv("CORS_ORIGINS", "http://localhost:3000").split(",")
 
 # Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:3000",  # Local development
-        "https://*.vercel.app",  # Vercel preview deployments
-        "https://*.vercel.app/*",  # Vercel preview deployments with paths
-        "https://*.your-domain.com"  # Your custom domain (if you have one)
-    ],
+    allow_origins=CORS_ORIGINS,
     allow_credentials=True,
     allow_methods=["*"],  # Allows all methods
     allow_headers=["*"],  # Allows all headers

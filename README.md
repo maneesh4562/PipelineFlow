@@ -139,9 +139,6 @@ The backend API documentation is available at `/docs` when running the server. K
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
@@ -152,5 +149,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-Your Name - [@yourtwitter](https://twitter.com/yourtwitter)
-Project Link: [https://github.com/yourusername/pipelineflow](https://github.com/yourusername/pipelineflow) 
+Your Name - [@Maneesh](https://iammaneesh.netlify.app)
+Project Link: [https://github.com/maneesh4562/pipelineflow](https://github.com/maneesh4562/pipelineflow) 
